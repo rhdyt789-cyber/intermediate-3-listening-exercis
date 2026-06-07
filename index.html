@@ -1,349 +1,283 @@
-```html
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Listening Exercise - Finding the Library</title>
+<title>B1 Listening Practice - Weekend Plans</title>
 
 <style>
-
 body{
     font-family: Arial, sans-serif;
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
-    background:#f5f7fb;
+    background:#f4f6f9;
+    margin:0;
+    padding:0;
 }
 
-h1{
-    text-align:center;
-    color:#2c3e50;
-}
-
-.card{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    margin-top:20px;
-    box-shadow:0 3px 10px rgba(0,0,0,.1);
-}
-
-.word-bank{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-    margin-bottom:25px;
-}
-
-.word{
-    background:#4361ee;
+header{
+    background:#2563eb;
     color:white;
-    padding:10px 15px;
-    border-radius:8px;
-    cursor:grab;
-    font-weight:bold;
+    text-align:center;
+    padding:25px;
+}
+
+.container{
+    max-width:1000px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 12px rgba(0,0,0,0.1);
+}
+
+audio{
+    width:100%;
+    margin:20px 0;
 }
 
 .question{
-    margin:20px 0;
-    font-size:18px;
-    line-height:1.8;
-}
-
-.dropzone{
-    display:inline-block;
-    min-width:120px;
-    min-height:35px;
-    border:2px dashed #4361ee;
+    border:1px solid #ddd;
+    padding:15px;
     border-radius:8px;
-    text-align:center;
-    background:white;
-    vertical-align:middle;
+    margin-bottom:20px;
 }
 
-.correct{
-    background:#06d6a0 !important;
-    color:white;
-    border-color:#06d6a0 !important;
+h2{
+    color:#2563eb;
 }
 
-.wrong{
-    background:#ef233c !important;
-    color:white;
-    border-color:#ef233c !important;
-}
-
-.feedback{
-    color:#ef233c;
-    font-size:14px;
-    margin-top:5px;
+input[type="text"]{
+    padding:8px;
+    width:250px;
 }
 
 button{
-    background:#4361ee;
+    background:#2563eb;
     color:white;
     border:none;
     padding:12px 25px;
     border-radius:8px;
-    font-size:18px;
+    font-size:16px;
     cursor:pointer;
 }
 
 button:hover{
-    opacity:.9;
+    background:#1d4ed8;
 }
 
 #result{
     margin-top:25px;
-    font-size:24px;
-    font-weight:bold;
+    padding:20px;
+    border-radius:8px;
     text-align:center;
-}
-
-.tf-feedback{
-    margin-left:10px;
+    font-size:22px;
     font-weight:bold;
 }
 
+.pass{
+    background:#dcfce7;
+    color:#166534;
+}
+
+.fail{
+    background:#fee2e2;
+    color:#991b1b;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#666;
+}
 </style>
 </head>
+
 <body>
+<p><strong>Instructions:</strong> Listen to the audio carefully. Then answer all questions.</p>
 
-<h1>🎧 Finding the Library</h1>
-
-<audio controls style="width:100%;">
-<source src="0L4-finding-the-library.mp3" type="audio/mpeg">
+<audio controls>
+    <source src="B1_weekend_plans.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
 </audio>
 
-<div class="card">
+<h2>Part A: Multiple Choice</h2>
 
-<h2>Part 1: Drag the Words</h2>
-
-<div class="word-bank">
-
-<div class="word" draggable="true" id="library">library</div>
-<div class="word" draggable="true" id="bridge">bridge</div>
-<div class="word" draggable="true" id="supermarket">supermarket</div>
-<div class="word" draggable="true" id="right">right</div>
-<div class="word" draggable="true" id="park">park</div>
-<div class="word" draggable="true" id="red">red</div>
-
+<div class="question">
+<h3>1. Where is the boy going this weekend?</h3>
+<label><input type="radio" name="q1" value="a"> The beach</label><br>
+<label><input type="radio" name="q1" value="b"> An activity centre in the mountains</label><br>
+<label><input type="radio" name="q1" value="c"> A city tour</label>
 </div>
 
 <div class="question">
-1. John is looking for the
-<span class="dropzone" data-answer="library"></span>
+<h3>2. What is dirtboarding similar to?</h3>
+<label><input type="radio" name="q2" value="a"> Cycling</label><br>
+<label><input type="radio" name="q2" value="b"> Surfing</label><br>
+<label><input type="radio" name="q2" value="c"> Skateboarding and snowboarding</label>
 </div>
 
 <div class="question">
-2. John needs to cross the river on a
-<span class="dropzone" data-answer="bridge"></span>
+<h3>3. Which activity involves jumping and swimming down a river canyon?</h3>
+<label><input type="radio" name="q3" value="a"> White water rafting</label><br>
+<label><input type="radio" name="q3" value="b"> Canyoning</label><br>
+<label><input type="radio" name="q3" value="c"> Zip-wiring</label>
 </div>
 
 <div class="question">
-3. John will see a big
-<span class="dropzone" data-answer="supermarket"></span>
-on his left.
+<h3>4. Which city is the girl visiting?</h3>
+<label><input type="radio" name="q4" value="a"> Rome</label><br>
+<label><input type="radio" name="q4" value="b"> London</label><br>
+<label><input type="radio" name="q4" value="c"> Paris</label>
 </div>
 
 <div class="question">
-4. He should turn
-<span class="dropzone" data-answer="right"></span>
-after the supermarket.
+<h3>5. What famous museum does the girl want to visit?</h3>
+<label><input type="radio" name="q5" value="a"> The British Museum</label><br>
+<label><input type="radio" name="q5" value="b"> The Louvre</label><br>
+<label><input type="radio" name="q5" value="c"> The Prado</label>
+</div>
+
+<h2>Part B: True or False</h2>
+
+<div class="question">
+<h3>6. The boy has done dirtboarding before.</h3>
+<label><input type="radio" name="q6" value="true"> True</label>
+<label><input type="radio" name="q6" value="false"> False</label>
 </div>
 
 <div class="question">
-5. The library is across from the
-<span class="dropzone" data-answer="park"></span>
+<h3>7. Zip-wiring is one of the activities at the centre.</h3>
+<label><input type="radio" name="q7" value="true"> True</label>
+<label><input type="radio" name="q7" value="false"> False</label>
 </div>
 
 <div class="question">
-6. The library is a big building with a
-<span class="dropzone" data-answer="red"></span>
-roof.
-</div>
-
-</div>
-
-<div class="card">
-
-<h2>Part 2: True or False</h2>
-
-<div class="question">
-1. John knows the town very well.
-<label><input type="radio" name="tf1" value="True"> True</label>
-<label><input type="radio" name="tf1" value="False"> False</label>
-<span id="fb1" class="tf-feedback"></span>
+<h3>8. The girl is interested in art.</h3>
+<label><input type="radio" name="q8" value="true"> True</label>
+<label><input type="radio" name="q8" value="false"> False</label>
 </div>
 
 <div class="question">
-2. John is visiting the town for only one day.
-<label><input type="radio" name="tf2" value="True"> True</label>
-<label><input type="radio" name="tf2" value="False"> False</label>
-<span id="fb2" class="tf-feedback"></span>
+<h3>9. The girl is going to Paris for one day.</h3>
+<label><input type="radio" name="q9" value="true"> True</label>
+<label><input type="radio" name="q9" value="false"> False</label>
 </div>
 
 <div class="question">
-3. The library is very far away.
-<label><input type="radio" name="tf3" value="True"> True</label>
-<label><input type="radio" name="tf3" value="False"> False</label>
-<span id="fb3" class="tf-feedback"></span>
+<h3>10. The girl is travelling with her family.</h3>
+<label><input type="radio" name="q10" value="true"> True</label>
+<label><input type="radio" name="q10" value="false"> False</label>
+</div>
+
+<h2>Part C: Fill in the Blank</h2>
+
+<div class="question">
+<h3>11. Dirtboarding uses a board with ________.</h3>
+<input type="text" id="q11">
 </div>
 
 <div class="question">
-4. John must cross a river to get to the library.
-<label><input type="radio" name="tf4" value="True"> True</label>
-<label><input type="radio" name="tf4" value="False"> False</label>
-<span id="fb4" class="tf-feedback"></span>
+<h3>12. The girl wants to go up the Eiffel ________.</h3>
+<input type="text" id="q12">
 </div>
 
 <div class="question">
-5. John should turn left after the supermarket.
-<label><input type="radio" name="tf5" value="True"> True</label>
-<label><input type="radio" name="tf5" value="False"> False</label>
-<span id="fb5" class="tf-feedback"></span>
+<h3>13. The famous Impressionist paintings are in the Musée d'________.</h3>
+<input type="text" id="q13">
 </div>
 
 <div class="question">
-6. The library is next to the park.
-<label><input type="radio" name="tf6" value="True"> True</label>
-<label><input type="radio" name="tf6" value="False"> False</label>
-<span id="fb6" class="tf-feedback"></span>
+<h3>14. The girl wants to see a statue called The ________.</h3>
+<input type="text" id="q14">
 </div>
 
 <div class="question">
-7. The library has a red roof.
-<label><input type="radio" name="tf7" value="True"> True</label>
-<label><input type="radio" name="tf7" value="False"> False</label>
-<span id="fb7" class="tf-feedback"></span>
+<h3>15. The boy says the girl has a lot planned for one ________.</h3>
+<input type="text" id="q15">
 </div>
 
-</div>
-
-<div style="text-align:center;margin-top:20px;">
-<button onclick="checkAnswers()">Check Answers</button>
-<button onclick="location.reload()">Try Again</button>
-</div>
+<button onclick="checkAnswers()">Submit Answers</button>
 
 <div id="result"></div>
 
+</div>
+
+<footer>
+    Self-Access Language Learning (SALL)
+</footer>
+
 <script>
-
-const draggables=document.querySelectorAll('.word');
-const dropzones=document.querySelectorAll('.dropzone');
-
-draggables.forEach(item=>{
-
-item.addEventListener('dragstart',e=>{
-e.dataTransfer.setData('text',item.id);
-});
-
-});
-
-dropzones.forEach(zone=>{
-
-zone.addEventListener('dragover',e=>{
-e.preventDefault();
-});
-
-zone.addEventListener('drop',e=>{
-
-e.preventDefault();
-
-const id=e.dataTransfer.getData('text');
-
-zone.innerHTML=id;
-zone.dataset.user=id;
-
-});
-
-});
 
 function checkAnswers(){
 
-let score=0;
+let score = 0;
 
-// Fill blanks
-
-dropzones.forEach(zone=>{
-
-if(zone.dataset.user===zone.dataset.answer){
-
-zone.classList.add("correct");
-score++;
-
-}else{
-
-zone.classList.add("wrong");
-
-zone.innerHTML=
-(zone.dataset.user || "blank")
-+"<br><small>✓ "
-+zone.dataset.answer+
-"</small>";
-
-}
-
-});
-
-// True False
-
-const answers={
-tf1:"False",
-tf2:"True",
-tf3:"False",
-tf4:"True",
-tf5:"False",
-tf6:"False",
-tf7:"True"
+const answers = {
+q1:"b",
+q2:"c",
+q3:"b",
+q4:"c",
+q5:"b",
+q6:"false",
+q7:"true",
+q8:"true",
+q9:"false",
+q10:"false"
 };
 
-for(let key in answers){
+for(let q in answers){
 
-const selected=document.querySelector(
-`input[name="${key}"]:checked`
-);
+let selected =
+document.querySelector(`input[name="${q}"]:checked`);
 
-const feedback=document.getElementById(
-"fb"+key.replace("tf","")
-);
-
-if(selected){
-
-if(selected.value===answers[key]){
-
-feedback.innerHTML="✓";
-feedback.style.color="green";
+if(selected && selected.value === answers[q]){
 score++;
-
-}else{
-
-feedback.innerHTML=
-"Correct: "+answers[key];
-feedback.style.color="red";
-
+}
 }
 
-}else{
+const fillAnswers = {
+q11:"wheels",
+q12:"tower",
+q13:"orsay",
+q14:"thinker",
+q15:"weekend"
+};
 
-feedback.innerHTML=
-"Correct: "+answers[key];
-feedback.style.color="red";
+for(let q in fillAnswers){
 
+let answer =
+document.getElementById(q)
+.value
+.toLowerCase()
+.trim();
+
+if(answer === fillAnswers[q]){
+score++;
+}
 }
 
+let percentage =
+Math.round((score/15)*100);
+
+let feedback = "";
+
+if(percentage >= 80){
+feedback = "Excellent! Your listening comprehension is very strong.";
+}
+else if(percentage >= 60){
+feedback = "Good Job! Keep practising.";
+}
+else{
+feedback = "Needs More Practice. Listen again and try once more.";
 }
 
-let percent=Math.round((score/13)*100);
+const result =
+document.getElementById("result");
 
-document.getElementById("result").innerHTML=
-`
-Score: ${score}/13
-<br>
-Percentage: ${percent}%
-`;
+result.innerHTML =
+`Score: ${score}/15 (${percentage}%)<br><br>${feedback}`;
 
+result.className =
+percentage >= 60 ? "pass" : "fail";
 }
 
 </script>
